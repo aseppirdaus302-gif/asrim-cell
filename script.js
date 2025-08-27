@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const nama = document.getElementById("nama").value.trim();
     const kelas = document.getElementById("kelas").value.trim();
-    const hp    = document.getElementById("hp").value.trim();
+    const hp = document.getElementById("hp").value.trim();
     const pesanan = document.getElementById("pesanan").value.trim();
     const pembayaran = document.getElementById("pembayaran").value;
 
-    // validasi simpel
+    // validasi 
     if (!nama || !kelas || !hp || !pesanan || !pembayaran) {
       alert("Harap lengkapi semua data.");
       return;
@@ -32,17 +32,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const pesan =
       "Halo Admin, saya ingin memesan:\n" +
       "------------------------\n" +
-      "👤 Nama: " + nama + "\n" +
-      "🏫 Kelas: " + kelas + "\n" +
-      "📱 Nomor HP: " + hp + "\n" +
-      "🛒 Pesanan: " + pesanan + "\n" +
-      "💳 Pembayaran: " + pembayaran + "\n" +
+      "👤 Nama: " +
+      nama +
+      "\n" +
+      "🏫 Kelas: " +
+      kelas +
+      "\n" +
+      "📱 Nomor HP: " +
+      hp +
+      "\n" +
+      "🛒 Pesanan: " +
+      pesanan +
+      "\n" +
+      "💳 Pembayaran: " +
+      pembayaran +
+      "\n" +
       "------------------------";
 
-    // Pakai wa.me agar aman di Desktop & Mobile
-    const url = "https://wa.me/" + nomorAdmin + "?text=" + encodeURIComponent(pesan);
+    // Jangan make wa.me soalnya bkl ke block sama window.location nya
+    const url =
+      "https://api.whatsapp.com/send?phone=" + nomorAdmin + "&text=" + encodeURIComponent(pesan);
 
-    // Gunakan location.href (lebih aman dari popup blocker)
+    // Aman
     window.location.href = url;
   });
 });
