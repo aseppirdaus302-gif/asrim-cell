@@ -1,0 +1,92 @@
+body{font-family:Arial,sans-serif; margin:0; padding:0; background:#f5f5f5;}
+h1{text-align:center; margin:20px 0 5px;}
+h2{color:purple;}
+h3{color:purple;}
+h5{color:gray;}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+.garis-bawah {
+  width: 100%;
+  border-top: 2px solid #000;
+  margin-top: 20px;
+}
+h2.warna{color:#FFD500;}
+
+/* Bungkus agar link berada di tengah dan ada ruang */
+.back-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 80px; /* atur spacing sesuai kebutuhan */
+  
+  /* Reset kecil supaya konsisten */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.4;
+  background: #fff;
+  color: #111;
+  padding: 24px;
+}
+
+/* Bungkus agar link berada di tengah dan ada ruang */
+.back-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 80px; /* atur spacing sesuai kebutuhan */
+}
+
+/* Gaya link seperti tombol, bukan link biru/underlined */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border-radius: 28px;
+  background: #f5f5f5;
+  text-decoration: none;      /* hilangkan underline */
+  color: #111;                /* bukan biru; ganti sesuai selera */
+  font-weight: 600;
+  font-size: clamp(15px, 4vw, 18px); /* responsif: kecil -> besar */
+ /* hapus highlight di Android */
+}
+
+/* Arrow bisa dipisah sebagai elemen agar mudah styling */
+.back-link .arrow {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* Hover / active untuk feedback (touch friendly) */
+.back-link:hover,
+.back-link:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+  outline: none;
+}
+
+/* Untuk perangkat kecil (opsional tweak) */
+@media (max-width: 360px) {
+  .back-link { padding: 12px 20px; gap: 8px; border-radius: 22px; }
+}
+
+/* Jika mau tampil datar tanpa shadow, bisa set background ke transparent:
+.back-link { background: transparent; box-shadow: none; }
+*/

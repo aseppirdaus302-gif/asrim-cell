@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Pemesanan</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- defer = pastikan DOM siap dulu baru jalankan JS -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Form Pemesanan Delivery Voucher</h2>
+
+    <form id="order-form">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" placeholder="Masukkan nama lengkap" required />
+
+      <label for="kelas">Nama Kelas:</label>
+      <input type="text" id="kelas" placeholder="Contoh: KELAS 12 TKJ 1" required />
+
+      <label for="hp">Nomor HP:</label>
+      <input type="tel" id="hp" placeholder="08xxxxxxxxxx" required />
+
+      <label for="pesanan">Pesanan:</label>
+      <textarea id="pesanan" placeholder="Tulis pesananmu" required></textarea>
+
+      <label for="pembayaran">Metode Pembayaran:</label>
+      <select id="pembayaran" required>
+        <option value="Cash">Cash</option>
+        <option value="Transfer">Transfer</option>
+      </select>
+
+      <button type="submit">Kirim Pesanan via WhatsApp</button>
+    </form>
+    <br>
+        <a href="index.html" class="back-btn">← Kembali ke Halaman Utama</a>
+    </form>
+
+    <p class="note">Masukkan Data Yang Anda Pesan Tadi Di Chat WhatsApp</p>
+  </div>
+</body>
+</html>

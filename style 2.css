@@ -1,0 +1,42 @@
+/* Reset dasar */
+body{font-family:poppins,sans-serif; margin:0; padding:0; background:#ffbd59;}
+h1 {color:white;}
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1frl));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.card:hover {
+  background-color: yellow;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 5px;
+  text-align: center;
+}
+ 
+.card-content .btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btn a:hover {
+  color: white;
+  font-size: 22px;
+}
