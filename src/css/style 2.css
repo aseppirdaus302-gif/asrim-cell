@@ -55,6 +55,42 @@ body {
   transform: scale(1.05);
 }
 
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+footer a:hover {
+  background: #ebd511;
+  color: white;
+  transform: scale(1.05);
+}
+
+.ig-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+
 /* Responsive buat layar kecil/hp */
 @media (max-width: 480px) {
   

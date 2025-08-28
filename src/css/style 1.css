@@ -34,6 +34,7 @@ h2.warna{color:#FFD500;}
   display: flex;
   justify-content: center;
   margin: 40px 0 80px; /* atur spacing sesuai kebutuhan */
+}
   
   /* Reset kecil supaya konsisten */
 * { box-sizing: border-box; margin: 0; padding: 0; }
