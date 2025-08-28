@@ -1,1 +1,1 @@
-https://asrim-cell.vercel.app/
+https://asrim-cells.vercel.app/
